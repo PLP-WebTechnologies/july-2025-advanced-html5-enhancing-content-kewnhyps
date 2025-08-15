@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Enhanced HTML5 page with lists, tables, media, and forms" />
+  <meta name="keywords" content="HTML5, forms, Ecites Solutions" />
+  <meta name="author" content="Kewnhyps" />
+  <title>Ecites Solutions | Enhanced Form Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, footer {
+      padding: 1rem;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    form {
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    fieldset {
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"], input[type="reset"] {
+      width: auto;
+      background: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    input[type="reset"] {
+      background: #6c757d;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ecites Solutions</h1>
+  <p>Empowering Tomorrow Today through digital innovation and workflow automation.</p>
+</header>
+
+<nav aria-label="Main Navigation">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#table">Service Comparison</a></li>
+    <li><a href="#media">Media</a></li>
+    <li><a href="#contact-form">Contact Form</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="overview">
+    <h2>Overview</h2>
+    <p>Ecites Solutions is a privately owned ICT company providing modern tools for workflow automation and digital service delivery across sectors worldwide.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Digital payments for utilities and services</li>
+      <li>Airtime and bulk top-up solutions</li>
+      <li>USSD API integration</li>
+      <li>Bulk SMS systems for outreach and engagement</li>
+      <li>AI-powered chatbots</li>
+      <li>Mobile data bundle services</li>
+    </ul>
+  </section>
+
+  <section id="table">
+    <h2>Service Comparison Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Description</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Digital Payments</td>
+          <td>Fast and secure payment processing for utilities</td>
+          <td>24/7</td>
+        </tr>
+        <tr>
+          <td>Bulk SMS</td>
+          <td>Mass text messaging for marketing and alerts</td>
+          <td>Business Hours</td>
+        </tr>
+        <tr>
+          <td>AI Chatbots</td>
+          <td>Automated customer engagement with AI</td>
+          <td>24/7</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="media">
+    <h2>Media Showcase</h2>
+    <img src="download/ecites-sample.png" alt="Ecites Office" />
+    <video controls width="100%">
+      <source src="download/sample-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <audio controls>
+      <source src="download/sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section id="contact-form">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254700000000" pattern="^\+254[0-9]{9}$" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Service Inquiry</legend>
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+          <option value="">--Please choose an option--</option>
+          <option value="payments">Digital Payments</option>
+          <option value="bulk-sms">Bulk SMS</option>
+          <option value="chatbots">AI Chatbots</option>
+        </select>
+
+        <label>Preferred Contact Method:</label>
+        <input type="radio" id="contact-email" name="contact_method" value="email" required />
+        <label for="contact-email">Email</label>
+        <input type="radio" id="contact-phone" name="contact_method" value="phone" />
+        <label for="contact-phone">Phone</label>
+
+        <label>
+          <input type="checkbox" name="newsletter" value="yes" /> Subscribe to our newsletter
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Details</legend>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your message..." minlength="10" required></textarea>
+
+        <label for="file">Upload Supporting File:</label>
+        <input type="file" id="file" name="file" accept=".jpg,.png,.pdf" />
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Kewnhyps. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
